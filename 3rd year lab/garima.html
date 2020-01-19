@@ -1,0 +1,18 @@
+<html>
+<head>
+<script>
+var i=1;
+var x=2;
+
+function display()
+{
+document.getElementById("result").innerHTML+="<tr><td>"+x+"</td><td>*</td><td>"+i+"</td><td>=</td><td>"+x*i+"</td></tr>"
+i++;
+
+}
+</script>
+</head>
+<body onload=setInterval(display,2000)>
+<table id="result" border=1></table>
+</body>
+</html>

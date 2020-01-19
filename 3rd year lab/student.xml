@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<student_details>
+<Student>
+    <name>Ankit kumar</name>
+	<Roll_no>161500088</Roll_no>
+	<section>B</section>
+	<course>BBA</course>
+</Student>	
+<Student>
+    <name>Amit kumar</name>
+	<Roll_no>5900089</Roll_no>
+	<section>A</section>
+	<course>Btech</course>
+</Student>	
+<Student>
+    <name>Ankit Maurya</name>
+	<Roll_no>456600090</Roll_no>
+	<section>A</section>
+	<course>Btech</course>
+</Student>	
+<Student>
+    <name>Amit ojha</name>
+	<Roll_no>23400074</Roll_no>
+	<section>B</section>
+	<course>Bcom</course>
+</Student>	
+<Student>
+    <name>Aman kumar</name>
+	<Roll_no>161500092</Roll_no>
+	<section>A</section>
+	<course>Btech</course>
+</Student>	
+<Student>
+    <name>Ankur singh</name>
+	<Roll_no>23400093</Roll_no>
+	<section>B</section>
+	<course>Bca</course>
+</Student><Student>
+    <name>Ayush singh</name>
+	<Roll_no>161500094</Roll_no>
+	<section>A</section>
+	<course>Btech</course>
+</Student><Student>
+    <name>Aniket kumar</name>
+	<Roll_no>23400095</Roll_no>
+	<section>B</section>
+	<course>Btech</course>
+</Student><Student>
+    <name>Ayush jadaun</name>
+	<Roll_no>161500096</Roll_no>
+	<section>B</section>
+	<course>Btech</course>
+</Student>
+</student_details>

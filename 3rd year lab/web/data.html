@@ -1,0 +1,70 @@
+<html>
+<head>
+<title> DOM Example</title>
+<style>
+ tr:nth-of-type(odd) {
+      background-color:green;
+    }
+ tr:nth-of-type(even) {
+      background-color:red;
+    }
+</style>
+<script>
+function MyFunction(xmlfilename)
+{
+try
+{
+xmlDoc=new ActiveXObject("Microsoft.XMLDOM");
+}//End of try
+catch(e)
+{
+try
+{
+xmlDoc=document.implementation.createDocument("","",null);
+}//End of try
+catch(e)
+{
+alert(e.message);
+}//End of catch
+}//End of catch
+try
+{
+xmlDoc.async=false;
+xmlDoc.load(xmlfilename);
+return(xmlDoc);
+}//End of try
+catch(e)
+{
+alert(e.message);
+return null;
+}//End of catch
+}//End of function
+</script>
+</head>
+<body>
+<script>
+xmlDoc=MyFunction("a.xml");
+if(xmlDoc!=null)
+{
+document.write("XML Document loaded in memory");
+document.write("<br>");
+document.write("<table border='3' align='Center'>");
+for(i=0;i<5;i++)
+{document.write("<tr align='Center'>");
+document.write("<td>");
+document.write(xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue);
+document.write("</td>");
+document.write("<td>");
+document.write(xmlDoc.getElementsByTagName("percentage")[i].childNodes[0].nodeValue);
+document.write("</td>");
+document.write("</tr>");
+}
+document.write("</table>");
+}
+else
+{
+document.write("XML Document could not be loaded in memory");
+}
+</script>
+</body>
+</html>

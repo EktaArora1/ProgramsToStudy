@@ -1,0 +1,21 @@
+Program to find factorial of a number using javascript. 
+ 
+<!doctype html> 
+<html> 
+<head> 
+<script> 
+  function show()  
+ {    var i,num,fact; 
+   fact=1; 
+   num=document.getElementById("num").value;  
+  for(i=num; i>0; i--) 
+     {     fact= fact*i;    }  
+    document.getElementById("answer").value=fact;   }
+   </script> 
+</head>  
+<body>  
+ Enter Number:   <input type="number" id="num"> 
+  <button onclick="show()">Factorial</button> 
+ <input type="number" id="answer" readonly> 
+</body>
+</html>

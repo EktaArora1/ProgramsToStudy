@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>Registration Form</title>
+<style>
+table {
+    border-collapse:separate;
+    border:solid DodgerBlue 1px;
+    border-radius:8px;
+    -moz-border-radius:8px;
+}
+</style>
+</head>
+<body bgcolor="gray">
+<form name="f1" onsubmit="return validation()"><h2 align="center">Registration</h2>
+<table align="center" bgcolor="DodgerBlue">
+  <tr>
+  <td>Username:<br></td>
+  <td><input type="text" name="tname" id="Username"></td>
+</tr>
+  <tr><td>Password:<br></td>
+  <td><input type="password" name="tname" id="pass1"><br></td>
+</tr>
+ <tr><td> Confirm Password:<br></td>
+  <td><input type="password" name="password" id="pass2"><br></td>
+  </tr>
+<tr><td>Email Id:<br></td>
+  <td><input type="email" name="email" id="email"><br></td>
+<tr>
+<td> Mobile Number:<br></td>
+  <td><input type="tel" name="tname"><br></td>
+</tr>
+<tr><td>Address:<br></td>
+  <td><textarea rows="2" cols="15"></textarea><br></td>
+</tr>
+ <tr><td> Gender:<br></td>
+  <td><input type="radio" name="gender" value="male" checked> Male<br></td>
+  <td><input type="radio" name="gender" value="female"> Female<br></td>
+</tr>
+<tr>
+ <td> Highest Qualification:<br></td>
+<td><select>
+<option value="High School">High School</option>
+  <option value="Inter">Inter</option>
+  <option value="Graduation">Graduation</option>
+  <option value="Post Graduation">Post Graduation</option>
+</select></td>
+</tr>
+<tr>
+<td>Hobbies:</td>
+<td><input type="checkbox" name="singing" value="singing"> singing<br>
+<input type="checkbox" name="dancing" value="dancing"> dancing<br>
+<input type="checkbox" name="rading" value="reading" checked> reading<br>
+</td>
+</tr> 
+<tr><td><button type="reset" value="Reset">Reset</button></td><td></td>
+<td><button type="submit" value="Submit">Submit</button></td></tr>
+</table>
+</form>
+<script>
+function validation()
+{
+var a = document.forms["f1"]["tname"].value;
+if (a ==null) 
+{
+alert("Fill All Fields");
+return false;
+}
+
+var b = document.forms["f1"]["email"].value;
+var ap = b.indexOf("@");
+var dp = b.lastIndexOf(".");
+if (ap<1 || dp<ap+2 || dp+2>=b.length) 
+{
+alert("Enter a valid e-mail address");
+return false;
+}
+var pass1 = document.getElementById('pass1');
+var pass2 = document.getElementById('pass2');
+if(pass1.value != pass2.value)
+{
+alert("Passwords Do Not Match!");
+}
+}
+</script>
+</body>
+</html>

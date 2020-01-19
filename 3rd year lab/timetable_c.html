@@ -1,0 +1,132 @@
+<html>
+<head>
+<style>
+table {
+    border-collapse:separate;
+    border:solid black 1px;
+    border-radius:8px;
+    -moz-border-radius:8px;
+}
+body{
+        cursor: pointer;
+    }
+.teacher .teachertext {
+    visibility: hidden;
+    color: lightYellow;
+    text-align: center;
+    background-color: tomato;
+    position: absolute;
+    
+}
+#day{
+background-color:DodgerBlue;
+}
+#wt{
+background-color:violet;
+}
+#p{
+background-color:yellow;
+}
+#prep{
+background-color:MediumSeaGreen;
+}
+#ind{
+background-color:whitesmoke;
+}
+#s{
+background-color:SlateBlue;
+} 
+#daa{
+background-color:tomato;
+}
+#ta{
+background-color:red;
+} 
+td:hover{
+background-color:SlateBlue;
+}
+
+.teacher:hover .teachertext {
+    visibility: visible;
+}
+</style>
+</head>
+<body>
+<table style="width:100%" border=1px>
+<caption align="bottom"><h2>Time Table</h2></caption>
+<tr  align="center" id="day">
+<td></td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+</tr>
+<tr id="day" align="center">
+<td></td>
+<td>08:00-09:00</td>
+<td>09:00-10:00</td>
+<td>10:00-11:00</td>
+<td>11:00-12:00</td>
+<td>12:00-01:00</td>
+<td>01:00-02:00</td>
+<td>02:00-03:00</td>
+<td>03:00-04:00</td>
+</tr>
+<tr align="center">
+  <td  id="day">Monday</td>
+  <td  class="teacher" id="p">CSE 5006<br>AB1<br>Room No. 423<span class="teachertext">Mr. Vivek Kumar</span></td>
+  <td class="teacher" id="daa">CSE 5001<br>AB1<br>Room No. 324<span class="teachertext">Dr. Anant Ram</span></td>
+  <td id="s" class="teacher">CSE 5002<br>AB1<br>Room No. 324<span class="teachertext">Mr. Mayank Srivastava</span></td>
+  <td id="wt" class="teacher">CSE 5004<br>AB1<br>Room No. 324<span class="teachertext">Mr. Anshy Singh</span></td>
+  <td id="ind" class="teacher">IND.<br>AB1<br>Room no. 324<span class="teachertext">Mr. Nitin Tyagi</span></td>
+  <td rowspan=5  bgcolor="DodgerBlue"  class="teacher">L<br>U<br>N<br>C<br>H<br><span class="teachertext">Have Lunch</span></td>
+  <td  id="prep" class="teacher">PREP<br>Room no. 402<span class="teachertext">Prep Faculty</span></td>
+  <td id="prep" class="teacher">PREP<br>Room no. 402<span class="teachertext">Prep Faculty</span></td>
+</tr>
+<tr align="center">
+  <td id="day">Tuesday</td>
+  <td id="p" class="teacher">CSE 5084<br>AB1<br>Room No. 402<span class="teachertext">Mr. Vivek Kumar</span></td>
+  <td id="p" class="teacher">CSE 5084<br>AB1<br>Room No. 402<span class="teachertext">Mr. Vivek Kumar</span></td>
+  <td id="s" class="teacher">CSE 5002<br>AB1<br>Room No. 324<span class="teachertext">Mr.Mayank Srivastava</span></td>
+  <td id="wt" class="teacher">CSE 5004<br>AB1<br>Room No. 324<span class="teachertext">Mr. Anshy Singh</span></td>
+  <td id="ta" class="teacher">CSE 5003<br>AB1<br>Room No. 324<span class="teachertext">Mr. Himanshu Sharma</span></td>
+  <td id="daa" class="teacher">CSE 5081<br>AB1<br>Room No. 317A<span class="teachertext">Mr. Nishant Singh</span></td>
+  <td id="daa" class="teacher">CSE 5081<br>AB1<br>Room No. 317A<span class="teachertext">Mr. Nishant Singh</span></td>
+</tr>
+<tr align="center">
+  <td id="day" class="teacher">Wednesday</td>
+  <td id="daa" class="teacher">CSE 5001<br>AB1<br>Room No. 324<span class="teachertext">Dr. Anant Ram</span></td>
+  <td id="ind" class="teacher">IND<br> Room no. 324<span class="teachertext">Mr. Nitin Tyagi</span></td>
+  <td id="s" class="teacher">CSE 5002<br>AB1<br>Room No. 324<span class="teachertext">Mr. Mayank Srivastava</span></td>
+  <td id="wt" class="teacher">CSE 5004<br>AB1<br>Room No. 324<span class="teachertext">Mr. Anshy Singh</span></td>
+  <td id="ta" class="teacher">CSE 5003<br>AB1<br>Room No. 324<span class="teachertext">Mr. Himanshu Sharma</span></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr align="center">
+  <td id="day">Thursday</td>
+  <td></td>
+  <td></td>
+  <td id="s" class="teacher">CSE 5002<br>AB1<br>Room No. 324<span class="teachertext">Mr. Mayank Srivastava</span></td>
+  <td id="wt" class="teacher">CSE 5004<br>AB1<br>Room No. 324<span class="teachertext">Mr. Anshy Singh</span></td>
+  <td id="ta" class="teacher">CSE 5003<br>AB1<br>Room No. 324<span class="teachertext">Mr. Himanshu Sharma</span></td>
+  <td id="daa" class="teacher">CSE 5081<br>AB1<br>Room No. 317A<span class="teachertext">Mr. Nishant Singh</span></td>
+  <td id="daa" class="teacher">CSE 5081<br>AB1<br>Room No. 317A<span class="teachertext">Mr. Nishant Singh</span></td>
+</tr>
+<tr align="center">
+  <td id="day">Friday</td>
+  <td></td>
+  <td id="daa" class="teacher">CSE 5001<br>AB1<br>Room No. 324<span class="teachertext">Dr. Anant Ram</span></td>
+  <td id="prep" class="teacher">PREP<br>AB1<br>Room No. 402<span class="teachertext">Prep Faculty</span></td>
+  <td id="p" class="teacher">CSE 5006<br>AB1<br>Room No. 402<span class="teachertext">Mr. Vivek Kumar</span></td>
+  <td id="p" class="teacher">CSE 5006<br>AB1<br>Room No. 402<span class="teachertext">Mr. Vivek Kumar</span></td>
+  <td  id="wt" class="teacher">CSE 5082<br>AB1<br>Room No. 317A<span class="teachertext">Mr. Jitesh Kumar Bhatia</span></td>
+  <td id="wt" class="teacher">CSE 5082<br>AB1<br>Room No. 317A<span class="teachertext">Mr. Jitesh Kumar Bhatia</span></td>
+</tr>
+</table>
+</body>
+</html>

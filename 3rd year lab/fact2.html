@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Document</title>
+</head>
+<body>
+<span>Factorial no of<input type="text" id="no" onkeyup="fact()">is<input
+type="text" id="fact"></span>
+<script>
+function fact(){
+var n=document.getElementById("no").value;
+var f=1;
+for (var i=1; i<=n; i++){
+f=f*i;
+}
+document.getElementById("fact").setAttribute("value",f);
+</script>
+</body>
+</html>

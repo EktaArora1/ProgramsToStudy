@@ -1,0 +1,20 @@
+<html>
+<script>
+function getTime(){
+var today=new Date();
+document.write(today);
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+//addazeroinfrontofnumbers<10
+document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+}
+</script>
+<body>
+
+<script>setInterval(getTime,1000);</script>
+CurrentTime:<span id="txt">
+</span>
+</body>
+</html>
+

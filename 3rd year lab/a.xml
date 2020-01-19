@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="design.css"?>
+<class>
+  <student>
+    <name>Priya</name>
+    <percentage>90</percentage>
+    </student>
+<student>
+    <name>Ekta</name>
+    <percentage>96</percentage>
+    </student>
+<student>
+    <name>Paawni</name>
+    <percentage>90</percentage>
+    </student>
+<student>
+    <name>Darpan</name>
+    <percentage>89</percentage>
+    </student>
+<student>
+    <name>Kareena</name>
+    <percentage>98</percentage>
+    </student>
+</class>

@@ -1,0 +1,22 @@
+<html> 
+<head> 
+<script type="text/javascript">
+ function fact(){ 
+var x=1; 
+var i;
+var v=parseInt(document.getElementById("t1").value); 
+for(i=1;i<=v;i++) {
+ x=x*i;
+ } 
+document.getElementById("t2").innerHTML="Your answer :"+x;
+ } 
+</script> 
+</head> 
+<body> 
+<p>Enter number 
+<input type="text" id="t1"><br> 
+<button type="button" name=b1 onclick="fact()">Submit</button> 
+</p> 
+<p id="t2"></p>
+</body> 
+</html>

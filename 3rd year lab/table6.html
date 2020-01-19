@@ -1,0 +1,50 @@
+<html>
+<head></head>
+<body>
+
+
+<script>
+
+function table(){
+var a=parseInt(document.getElementById("no").value);
+
+var i,j,g=1;
+
+var b=/[0123456789]/.test(a);
+if(b=="false")
+{document.write("enter correct number");}
+else
+{document.write("<table border="1">");
+for(i=1;i<=10;i++)
+{
+ document.write("<tr>");
+for(j=1;j<=5;j++)
+{
+ if(j==1)
+ {document.write("<td>"+a+"</td>");}
+ elif(j==2)
+ {document.write("<td>"+"*"+</td>");}
+ elif(j==3)
+ {document.write("<td>"+i+"</td>");}
+ elif(j==4)
+ {document.write("<td>"+"="+"</td>");}
+ elif(j==5)
+ {g=a*i;
+ document.write("<td>"+g+"</td>");}
+}
+ document.write("</tr>");
+}
+document.write("</table>");
+}
+}
+function myFunction() {
+    myVar = setTimeout(setInterval(table,2000), 20000);
+document.write(myVar);
+}
+</script>
+
+Enter a number to print table:<input type="text" id="no">
+<button onclick="myFunction()">table</button>
+
+</body>
+</html>

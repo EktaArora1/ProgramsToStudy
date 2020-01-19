@@ -1,0 +1,165 @@
+<html><head>
+<style>
+table{
+width: 300px;
+height: 500px;
+}
+#display{
+text-align: right;
+margin-left: 10px;
+width: 90%;
+height: 40px;
+font-size:15px ;
+ }
+body{
+margin-left: 20%;
+margin-top: 10%;
+}
+#no{
+margin-right: 0.5cm;
+margin-bottom: 0.25cm;
+color: black;
+background-color: SlateBlue;
+border-radius: 15%;
+height: 1cm;
+width: 1.5cm;
+}
+</style>
+</head>
+<body>
+<table border="2" bgcolor="gray">
+<tr>
+<td colspan="3">
+<input type="text" name="display" id="display">
+</td>
+<td><input id ="no" type="button" onclick="document.getElementById('display').value=' '" value="Reset">
+</td>
+</tr>
+<tr>
+<td><input id ="no" type="button" name="one" value="1" onclick="one();"></td>
+
+<td><input id ="no" type="button" name="one" value="2" onclick="two();"></td>
+
+<td><input id ="no" type="button" name="one" value="3" onclick="three();"></td>
+
+<td><input id ="no" type="button" name="plus" value="+" onclick="add();"></td>
+
+</tr>
+<tr>
+<td><input id ="no" type="button" name="one" value="4" onclick="four();"></td>
+
+<td><input id ="no" type="button" name="one" value="5" onclick="five();"></td>
+
+<td><input id ="no" type="button" name="one" value="6" onclick="six();"></td>
+
+<td><input id ="no" type="button" name="plus" value="-" onclick="sub();"></td>
+
+</tr>
+<tr>
+<td><input id ="no" type="button" name="one" value="7" onclick="seven();"></td>
+
+<td><input id ="no" type="button" name="one" value="8" onclick="eight();"></td>
+
+<td><input id ="no" type="button" name="one" value="9" onclick="nine();"></td>
+
+<td><input id ="no" type="button" name="plus" value="*" onclick="mul();"></td>
+
+</tr>
+<tr>
+<td><input id ="no" type="button" name="one" value="." onclick="dot();"></td>
+
+<td><input id ="no" type="button" name="one" value="0" onclick="zero();"></td>
+
+<td><input id ="no" type="button" name="one" value="=" onclick="equal();"></td>
+
+<td><input id ="no" type="button" name="plus" value="/" onclick="div();"></td>
+
+</tr>
+</table>
+<script>
+var disp=document.getElementById('display');
+var op;
+var fval;
+var sval;
+var clear=false;
+function one() {
+if (clear) {disp.value=""; clear=false;}
+disp.value=disp.value+'1';
+    }
+function two() {
+if (clear) {disp.value=""; clear=false;}
+disp.value=disp.value+'2';
+    }
+function three() {
+if (clear) {disp.value=""; clear=false;}
+disp.value=disp.value+'3';
+    }
+function four() {
+if (clear) {disp.value=""; clear=false;}
+disp.value=disp.value+'4';
+    }
+function five() {
+if (clear) {disp.value=""; clear=false;}
+disp.value=disp.value+'5';
+    }
+function six() {
+if (clear) {disp.value=""; clear=false;}
+disp.value=disp.value+'6';
+    }
+function seven() {
+if (clear) {disp.value=""; clear=false;}
+disp.value=disp.value+'7';
+    }
+function eight() {
+if (clear) {disp.value=""; clear=false;}
+disp.value=disp.value+'8';
+    }
+function nine() {
+if (clear) {disp.value=""; clear=false;}
+disp.value=disp.value+'9';
+    }
+function zero() {
+if (clear) {disp.value=""; clear=false;}
+disp.value=disp.value+'0';
+    }
+function add() {
+fval=disp.value;
+op=1;
+disp.value="";
+    }
+function sub() {
+fval=disp.value;
+op=2;
+disp.value="";
+    }
+function mul() {
+fval=disp.value;
+op=3;
+disp.value="";
+    }
+function div() {
+fval=disp.value;
+op=4;
+disp.value="";
+    }
+function equal() {
+sval=disp.value;
+fval=parseInt(fval);
+sval=parseInt(sval);
+if (op==1){
+disp.value=(fval+sval);
+        }
+elseif (op==2){
+disp.value=(fval-sval);
+        }
+elseif (op==3){
+disp.value=(fval*sval);
+        }
+else {
+disp.value=(fval/sval);
+        }
+clear=true;
+    }
+</script>
+</body>
+</html>

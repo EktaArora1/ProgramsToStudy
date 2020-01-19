@@ -1,0 +1,18 @@
+<HTML>
+<HEAD>
+<SCRIPT>
+var colors = newArray("red","orange","green","blue","brown");
+var colorIndex = 0;
+function changeColor()
+{ document.bgColor = colors[colorIndex] ;
+colorIndex = (colorIndex + 1);
+}
+function startColorChange()
+{ setInterval("changeColor()",3000);
+}
+</SCRIPT>
+</HEAD>
+<BODY BGCOLOR="white" onload="startColorChange()">
+<P>The setInterval() repeatedly changes the document background color every three seconds.</P>
+</BODY>
+</HTML>

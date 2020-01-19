@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<style>
+table,th,td {
+  border : 1px solid black;
+  border-collapse: collapse;
+}
+th,td {
+  padding: 5px;
+}
+</style>
+<body>
+<br><br>
+<table id="demo"></table>
+<script>
+function loadXMLDoc() {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this);
+    }
+  };
+  xmlhttp.open("GET","student.xml", true);
+  xmlhttp.send();
+}
+function myFunction(xml) {
+  var i;
+  var xmlDoc = xml.responseXML;
+  var table="<tr><th>name</th><th>Roll_no</th><th>section</th><th>course</th></tr>";
+  var x = xmlDoc.getElementsByTagName("Student");
+  var name=document.getElementById("13").value;
+  console.log(name);
+  for (i = 0; i <x.length; i++) { 
+	//if(name==(x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue)){
+	//console.log(document.getElementById("12").ghgh.value);
+	if((x[i].getElementsByTagName(document.getElementById("12").ghgh.value)[0].childNodes[0].nodeValue).toLowerCase().indexOf(name.toLowerCase())==0){
+	
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("Roll_no")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+	x[i].getElementsByTagName("section")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+	x[i].getElementsByTagName("course")[0].childNodes[0].nodeValue +
+    "</td></tr>";
+  }
+  }
+  document.getElementById("demo").innerHTML = table;
+}
+/*
+function call()
+{ var name=document.getElementById("13");
+   for (i = 0; i <x.length; i++) 
+   { var stu=xmlDoc.getElementsByTagName("name");
+      if(stu==name)
+	  {console.log(name);
+	  }
+   }
+}
+*/
+</script>
+<br><br>
+<form id="12">
+<input type="radio" name="ghgh" value="name">Name
+<input type="radio" name="ghgh" value="Roll_no">Roll_no
+<input type="radio" name="ghgh" value="section">section
+<input type="radio" name="ghgh" value="course">course
+</form>
+
+<label>Enter for Search:</label>
+<input type="Textfield" id="13" onkeyup="loadXMLDoc()">
+</body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+<head> 
+<script type="text/javascript">
+ function fact()
+{ 
+var x;
+x=1;
+var i; 
+var v=parseInt(document.getElementById("t1").innerHTML);
+for(i=1;i<=v;i++) 
+{x=x*i;
+} 
+document.write("Factorial is:"+x); 
+} 
+</script> 
+</head>
+<body> 
+<p>Enter number <input type="text" id="t1"><br> 
+<button type="button" name=b1 onclick="fact()">Submit</button>
+</p>
+</body>
+</html>

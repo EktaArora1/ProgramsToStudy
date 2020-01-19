@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script>
+        var browsername=navigator.appName; //navigator is an object and appName is a property
+        var colors=new Array("violet","indigo","orange","blue","green","yellow","brown","DodgerBlue");
+        var colorIndex=0;
+        function changeColor()
+        {
+            document.bgColor=colors[colorIndex];
+            colorIndex=(colorIndex+1);
+            if(colorIndex==6)
+            {
+                colorIndex=0;
+            }
+        }
+        function startColorChange(){
+            setInterval("changeColor()",3000)
+        }
+        </script>
+    </head>
+    <body bgcolor="white" onload="startColorChange()">
+        <p>
+            it will change background color
+        </p>
+    </body>
+
+</html>

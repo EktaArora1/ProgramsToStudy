@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<body bgcolor=rgb('125','100','75')>
+<input type="range" min="0" max="255" id="rint" class="chg">Red<br>
+<input type="range" min="0" max="255" id="gint" class="chg">Green<br>
+<input type="range" min="0" max="255" id="bint" class="chg">Blue<br>
+<button type="button" onclick="func()">SetColor</button>
+<script>
+    function  func() {
+        var r=document.getElementById('rint').value;
+        var g=document.getElementById('gint').value;
+        var b=document.getElementById('bint').value;
+        document.body.style.backgroundColor='rgb('+r+','+g+','+b+')';
+    }
+</script>
+</body>
